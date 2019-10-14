@@ -1,0 +1,230 @@
+@import "/css/main.css";
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Typography Utilities */
+.font--light {
+  font-family: "Barlow Condensed", sans-serif;
+  color: gray;
+}
+
+.font--wide {
+  letter-spacing: 4px;
+  word-spacing: 2px;
+}
+
+.font--medium {
+  font-size: 24px;
+  color: hsl(230, 11%, 40%);
+}
+
+.font--large {
+  font-size: 42px;
+}
+
+.font--heavy {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  color: hsl(230, 29%, 20%);
+}
+
+.nav--special {
+  color: rgb(197, 196, 196) !important;
+}
+
+/* Mobile First Design - iPhone X and Up */
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.25rem 2.25rem 1rem 1.75rem;
+  width: 100vw;
+  height: 100%;
+}
+
+.nav-bar__logo {
+  position: relative;
+  height: 26px;
+  width: 26px;
+}
+
+/* In this state the navigation button has been clicked (Need to implement JS action to toggle hamburger menu on and off)*/
+.nav-bar__menu {
+  list-style: none;
+  position: absolute;
+  top: 75px;
+  width: 80%;
+  height: 35%;
+  padding: 1rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgb(185, 185, 185);
+}
+
+.nav-bar__item {
+  position: relative;
+  text-align: center;
+  padding: 0.75rem;
+}
+
+.nav-bar__menu a {
+  font-size: 18px;
+  text-decoration: none;
+  word-spacing: 1px;
+  color: #000;
+}
+
+.horizontal--bar {
+  border-bottom: 1px solid lightgray;
+  width: 285px;
+}
+
+.nav--special {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+}
+
+.shape-block {
+  position: absolute;
+  height: 55%;
+  width: 50vw;
+  background-color: rgb(245, 245, 245);
+  border-radius: 0 0 0 50px;
+  z-index: -1;
+  right: 0px;
+  top: 0px;
+}
+
+.image-block {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  top: 25px;
+}
+
+.inner-content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.inner-content__text {
+  position: relative;
+  width: 375px;
+  padding: 0.75rem;
+  top: 0px;
+  line-height: 1.2;
+  margin: 0 0 1rem 0.75rem;
+}
+
+.inner-content__text:first-child {
+  margin-top: 5rem;
+}
+
+.inner-content__text span {
+  color: white;
+  background-color: hsl(230, 29%, 20%);
+  padding: 0.35rem 0.75rem 0.35rem 0.75rem;
+  border-radius: 15px;
+  margin-right: 0.25rem;
+}
+
+.btn {
+  padding: 0.75rem 1rem;
+  background-color: hsl(0, 100%, 68%);
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .nav-bar__menu {
+    margin-left: 5%;
+    margin-right: 4%;
+  }
+
+  .inner-content-container {
+    justify-items: flex-end;
+    align-items: flex-end;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav-bar {
+    justify-content: space-evenly;
+  }
+
+  .nav-bar__menu {
+    position: relative;
+    align-self: center;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    top: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-bar__item:hover {
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .horizontal--bar {
+    display: inline-block;
+    background-color: lightgray;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+  }
+
+  .image-block {
+    position: fixed;
+    top: 150px;
+    right: 0px;
+    height: auto;
+    width: auto;
+    max-width: 650px;
+    max-height: 456px;
+  }
+
+  .inner-content-container {
+    max-width: 800px;
+  }
+
+  .inner-content__text {
+    padding: 1.5rem 1rem;
+    right: 50px;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+}

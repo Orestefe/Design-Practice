@@ -1,0 +1,196 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* Utilities */
+.alt--text {
+  color: hsl(0, 6%, 24%);
+  font-weight: 700;
+}
+
+.font--wide {
+  letter-spacing: 10px;
+}
+
+.font--light {
+  font-weight: 300;
+}
+
+.font--large {
+  font-size: 36px;
+}
+
+/* Header */
+.main-header {
+  position: relative;
+  height: 85px;
+  width: 100vw;
+}
+
+.logo {
+  position: relative;
+  max-height: 40px;
+  height: 25px;
+  max-width: 165px;
+  width: 103px;
+  margin: 30px 0px 30px 30px;
+}
+
+/* Main Image */
+.image-block {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  background: url("../images/hero-mobile.jpg") no-repeat center center/cover;
+}
+
+/* Main Content */
+.inner-content-container {
+  position: relative;
+  height: 465px;
+  padding: 65px 30px 0px 30px;
+  text-align: center;
+}
+
+.main--text {
+  position: relative;
+  padding-bottom: 40px;
+  padding-top: 25px;
+  line-height: 1.5;
+}
+
+.form__email {
+  position: relative;
+  width: 260px;
+  margin: 0 auto;
+  height: 48px;
+  text-align: left;
+  outline: none;
+}
+
+/* Input Field */
+.input__email {
+  position: absolute;
+  height: 46px;
+  width: 260px;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input__email::placeholder {
+  color: lightgray;
+  font-size: 16px;
+}
+
+.submit__button {
+  position: absolute;
+  right: 0px;
+  height: 46px;
+  width: 68px;
+  background: linear-gradient(135deg, hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+  border: transparent;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px hsl(0, 80%, 86%);
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.submit__icon {
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 550px) {
+  .image-block {
+  }
+  .input__email {
+    width: 365px;
+  }
+
+  .submit__button {
+    left: 330px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+    background: url("../images/bg-pattern-desktop.svg") no-repeat 0 0;
+  }
+
+  .font--large {
+    font-size: 72px;
+  }
+
+  .main-header {
+    width: 57.5%;
+    height: 30vh;
+    padding: 65px 0px 150px 165px;
+  }
+
+  .logo {
+    width: 165px;
+    height: 35px;
+    margin: 0;
+  }
+
+  .image-block {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: url("../images/hero-desktop.jpg") no-repeat center center/cover;
+    width: 610px;
+    height: 100%;
+  }
+
+  .inner-content-container {
+    width: 57.5%;
+    height: 70vh;
+    padding: 0 0 0 165px;
+  }
+
+  .heading--text {
+    text-align: left;
+    width: 6em;
+  }
+
+  .main--text {
+    text-align: justify;
+    width: 455px;
+  }
+
+  .form__email {
+    width: 455px;
+    margin: 0 auto;
+  }
+
+  /* Input Field */
+  .input__email {
+    width: 455px;
+  }
+
+  .submit__button {
+    width: 80px;
+    left: 575px;
+  }
+
+  .submit__button:hover {
+    opacity: 0.8;
+  }
+}

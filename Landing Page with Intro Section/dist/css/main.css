@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background: url("../images/bg-mobile.svg") no-repeat;
+  background-size: 100%;
+  background-color: #674baf;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 10%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100%; }
+
+.image-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .image-block > .logo {
+    width: 100%;
+    position: relative;
+    padding-right: 50%;
+    height: 10%;
+    margin-top: 35px; }
+  .image-block > .illustration {
+    position: relative;
+    width: 100%;
+    margin-top: 55px;
+    max-height: 500px;
+    max-width: 700px; }
+
+.content {
+  width: 100%; }
+  .content h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 65px; }
+  .content p {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 25px; }
+
+.btn {
+  background-color: #fff;
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
+  padding: 0.75rem;
+  color: #674baf;
+  border-radius: 25px;
+  margin-bottom: 50px; }
+
+.social-media-links a {
+  color: #fff;
+  text-decoration: none; }
+
+.social-media-links i {
+  padding: 0 0.5rem;
+  font-size: 24px; }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background: url("../images/bg-desktop.svg") no-repeat;
+    background-color: #674baf;
+    overflow: hidden; }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px; }
+  .image-block {
+    align-items: center;
+    width: 700px;
+    height: 100%; }
+  .content {
+    height: 100%;
+    max-width: 600px;
+    padding-top: 20px;
+    margin-top: 35px;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .content h1 {
+      text-align: left;
+      font-size: 44px; }
+    .content p {
+      text-align: left;
+      font-size: 20px; }
+  .btn {
+    height: 55px; }
+  .social-media-links {
+    padding-top: 2rem;
+    align-self: flex-end; }
+    .social-media-links i {
+      font-size: 36px; } }
