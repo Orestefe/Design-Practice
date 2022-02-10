@@ -4,7 +4,7 @@
     "description": "A test landing page to practice my CSS and HTML skills",
     "main": "index.js",
     "dependencies": {
-        "node-sass": "^4.12.0"
+        "node-sass": "^7.0.0"
     },
     "devDependencies": {},
     "scripts": {
